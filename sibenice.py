@@ -117,7 +117,6 @@ def pismeno(nic):
     return chyba
 while True:   
     a = 0
-    misto = "_"
     while a == 0:
         volba = uvod("")
         if volba != 0:
@@ -130,7 +129,10 @@ while True:
         seznam_slovo = hudba("")
         seznam_vypis = []
         for i in range(len(seznam_slovo)):
-            seznam_vypis.append(misto)
+            if seznam_slovo != "-":
+                seznam_vypis.append("_")
+            else:
+                seznam_vypis.append("-")
         print(seznam_vypis)
         chyba = 0
         while chyba < 7 and seznam_vypis != seznam_slovo:
@@ -151,7 +153,10 @@ while True:
         seznam_slovo = priroda("")
         seznam_vypis = []
         for i in range(len(seznam_slovo)):
-            seznam_vypis.append(misto)
+            if seznam_slovo != "-":
+                seznam_vypis.append("_")
+            else:
+                seznam_vypis.append("-")
         print(seznam_vypis)
         chyba = 0
         while chyba < 7 and seznam_vypis != seznam_slovo:
@@ -172,7 +177,10 @@ while True:
         seznam_slovo = sport("")
         seznam_vypis = []
         for i in range(len(seznam_slovo)):
-            seznam_vypis.append(misto)
+            if seznam_slovo != "-":
+                seznam_vypis.append("_")
+            else:
+                seznam_vypis.append("-")
         print(seznam_vypis)
         chyba = 0
         while chyba < 7 and seznam_vypis != seznam_slovo:
@@ -193,7 +201,10 @@ while True:
         seznam_slovo = svet("")
         seznam_vypis = []
         for i in range(len(seznam_slovo)):
-            seznam_vypis.append(misto)
+            if seznam_slovo != "-":
+                seznam_vypis.append("_")
+            else:
+                seznam_vypis.append("-")
         print(seznam_vypis)
         chyba = 0
         while chyba < 7 and seznam_vypis != seznam_slovo:
@@ -214,7 +225,10 @@ while True:
         seznam_slovo = veda("")
         seznam_vypis = []
         for i in range(len(seznam_slovo)):
-            seznam_vypis.append(misto)
+            if seznam_slovo != "-":
+                seznam_vypis.append("_")
+            else:
+                seznam_vypis.append("-")
         print(seznam_vypis)
         chyba = 0
         while chyba < 7 and seznam_vypis != seznam_slovo:
